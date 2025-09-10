@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #121212;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    nav {
+      background: #1e1e1e;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    }
+
+    nav h1 {
+      color: #0ea5e9;
+      font-size: 22px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ddd;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #0ea5e9;
+    }
+
+    /* Section */
+    .projects-section {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .projects-section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .projects-section .subtitle {
+      color: #bbb;
+      margin-bottom: 30px;
+    }
+
+    /* Grid */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+    }
+
+    /* Cards */
+    .project-card {
+      background: #1e1e1e;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .project-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      color: #bbb;
+      margin-bottom: 15px;
+    }
+
+    /* Tags */
+    .tags {
+      margin-bottom: 15px;
+    }
+
+    .tags span {
+      display: inline-block;
+      background: #2a2a2a;
+      color: #0ea5e9;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      margin: 3px;
+    }
+
+    /* Buttons */
+    .actions {
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 6px;
+      background: #0ea5e9;
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-right: 10px;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+
+    .btn:hover {
+      background: #0c87b8;
+      box-shadow: 0 0 10px rgba(14,165,233,0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>My Portfolio</h1>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="accomplishments.html">Accomplishments</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="resume.pdf" target="_blank">Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- Projects Section -->
+  <section class="projects-section">
+    <h2>Key Projects</h2>
+    <p class="subtitle">Showcasing my technical projects and applications</p>
+
+    <div class="project-grid">
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <img src="traffic.jpg" alt="Traffic System">
+        <h3>Smart AI-Based Traffic Signal Management System</h3>
+        <p>
+          An intelligent real-time traffic management system for SIH 2024,
+          dynamically controlling signals using AI-based vehicle detection
+          and microcontroller integration.
+        </p>
+        <div class="tags">
+          <span>Python</span>
+          <span>OpenCV</span>
+          <span>YOLO</span>
+          <span>ESP32</span>
+        </div>
+        <div class="actions">
+          <a href="#" class="btn">GitHub</a>
+          <a href="#" class="btn">Live Demo</a>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <img src="unlimity.jpg" alt="Unlimity">
+        <h3>Unlimity</h3>
+        <p>
+          A free, AI-driven online mentoring platform with automated scheduling,
+          built-in video conferencing, real-time chat, community forums, and more.
+        </p>
+        <div class="tags">
+          <span>React.js</span>
+          <span>Node.js</span>
+          <span>Express.js</span>
+          <span>Firebase</span>
+        </div>
+        <div class="actions">
+          <a href="#" class="btn">GitHub</a>
+          <a href="#" class="btn">Live Demo</a>
+        </div>
+      </div>
+
+      <!-- More project cards... -->
+    </div>
+  </section>
+
+</body>
+</html>

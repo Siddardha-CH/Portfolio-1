@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience | Portfolio</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: #0d1117; /* Dark background */
+      color: #e6edf3;
+      min-height: 100vh;
+    }
+
+    /* Header / Navbar */
+    header {
+      width: 100%;
+      background: #161b22;
+      padding: 20px 60px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #c9d1d9;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links .active {
+      color: #007acc;
+      font-weight: bold;
+    }
+
+    /* Page Section */
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .title h1 {
+      font-size: 2.5em;
+      color: #fff;
+    }
+
+    .title p {
+      font-size: 1.1em;
+      color: #c9d1d9;
+      margin-top: 8px;
+    }
+
+    /* Timeline */
+    .timeline {
+      position: relative;
+      margin: 20px 0;
+      padding-left: 30px;
+      border-left: 2px solid #30363d;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 40px;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -11px;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      background: #007acc;
+      border-radius: 50%;
+      border: 3px solid #0d1117;
+      box-shadow: 0 0 0 2px #161b22;
+    }
+
+    .timeline-content {
+      background: #161b22;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.5);
+      transition: background 0.3s ease;
+    }
+
+    .timeline-content:hover {
+      background: #1e2630;
+    }
+
+    .timeline-content h3 {
+      margin-bottom: 5px;
+      color: #fff;
+      font-size: 1.3em;
+    }
+
+    .timeline-content span {
+      display: block;
+      font-size: 0.9em;
+      color: #8b949e;
+      margin-bottom: 10px;
+    }
+
+    .timeline-content ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .timeline-content ul li {
+      margin-bottom: 6px;
+      line-height: 1.5;
+      color: #c9d1d9;
+    }
+
+    .company {
+      font-weight: bold;
+      color: #007acc;
+      float: right;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <a href="home.html" class="logo">Siddardha CH</a>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="accomplishments.html">Accomplishments</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Experience Section -->
+  <div class="container">
+    <div class="title">
+      <h1>Experience</h1>
+      <p>My professional journey and work experience</p>
+    </div>
+
+    <div class="timeline">
+
+      <!-- SDE Intern -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>SDE Intern <span class="company">SuccessMagnet</span></h3>
+          <span>Remote | June 2025 – July 2025</span>
+          <ul>
+            <li>Worked on improving company website and user experience</li>
+            <li>Optimized web performance and ensured cross-device compatibility</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Web Dev Intern -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Web Development Intern <span class="company">Jabsz Gaming Studios LLP</span></h3>
+          <span>Remote | April 2025 – July 2025</span>
+          <ul>
+            <li>Built an e-commerce gaming platform using React, TypeScript, Tailwind, and Firebase</li>
+            <li>Contributed to website development, internal portals, and game pages</li>
+            <li>Collaborated with team members to improve user experience and implement new features</li>
+            <li>Completed the whole agile dev cycle from prototyping to testing</li>
+            <li>Worked on a client project using Appsheet</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- AI/ML Intern -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>AI/ML Intern <span class="company">UptoSkills</span></h3>
+          <span>Remote | Jan 2025 – April 2025</span>
+          <ul>
+            <li>Developed an AI-based proctoring system using Python, OpenCV, and JavaScript</li>
+            <li>Achieved 20% improvement in detection accuracy through algorithm optimization</li>
+            <li>Built responsive UI with HTML/CSS/JS, improving user engagement by 30%</li>
+            <li>Collaborated with a team of 5 developers to implement and test features</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Extracurriculars -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Extracurriculars <span class="company">University Clubs & Activities</span></h3>
+          <span>Walchand Institute of Technology | 2022 – Present</span>
+          <ul>
+            <li>Active member of ISTE (Indian Society for Technical Education) student chapter</li>
+            <li>Volunteer at NSS (National Service Scheme) for community service</li>
+            <li>Member of LOL (Learn Out Loud) club focusing on public speaking & soft skills</li>
+            <li>Skilled in event management and coordination via multiple club activities</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

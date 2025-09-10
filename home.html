@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Portfolio</title>
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: #0d1117; /* Dark background */
+      color: #e6edf3;      /* Light text */
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navbar */
+    header {
+      width: 100%;
+      background: #161b22; /* Dark navbar */
+      padding: 20px 60px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #c9d1d9;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links .active {
+      color: #007acc;
+      font-weight: bold;
+    }
+
+    .btn {
+      background: #007acc;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .btn-outline {
+      border: 2px solid #007acc;
+      color: #007acc;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      margin-left: 12px;
+      font-size: 16px;
+    }
+
+    .btn-outline:hover {
+      background: #007acc;
+      color: #fff;
+    }
+
+    /* Hero Section */
+    .hero {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      gap: 80px;
+      min-height: calc(100vh - 80px);
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 3.5em;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .hero-text h1 span {
+      color: #007acc;
+    }
+
+    .hero-text p {
+      font-size: 1.2em;
+      line-height: 1.6em;
+      margin-bottom: 25px;
+      color: #c9d1d9;
+    }
+
+    .hero-buttons {
+      margin-top: 20px;
+    }
+
+    .hero-image {
+      position: relative;
+    }
+
+    .hero-image img {
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid #007acc;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+    }
+
+    .hero-image .tag {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background: #007acc;
+      color: #fff;
+      font-size: 16px;
+      padding: 6px 12px;
+      border-radius: 14px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <a href="home.html" class="logo">Siddardha CH</a>
+      <ul class="nav-links">
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="accomplishments.html">Accomplishments</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+      <a href="resume.pdf" class="btn">Resume</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Siddardha Chiluveru</span></h1>
+      <p>
+        Driven CSE undergraduate | Full Stack Developer | AI/ML Enthusiast <br>
+        350+ Leetcode Problems | Codeforces Newbie | Passionate Problem Solver
+      </p>
+      <div class="hero-buttons">
+        <a href="resume.pdf" class="btn">View Resume</a>
+        <a href="contact.html" class="btn-outline">Contact Me</a>
+        <a href="projects.html" class="btn-outline">Explore Projects</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/profile.jpg" alt="Profile Photo">
+      <span class="tag">8.05 CGPA</span>
+    </div>
+  </section>
+
+  <script>
+    // Highlight active link
+    const links = document.querySelectorAll(".nav-links a");
+    links.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+</body>
+</html>
